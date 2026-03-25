@@ -1,0 +1,18 @@
+[project]
+name = "chupo"
+version = "0.1.0"
+description = "CLI tool to upload images to Chevereto (V4 API V1 file upload) with a polished terminal UI."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "typer>=0.15.0",
+    "rich>=13.9.0",
+    "httpx>=0.28.0",
+]
+
+[project.scripts]
+chupo = "chupo.cli:run"
+
+[build-system]
+requires = ["uv_build>=0.10.12,<0.11.0"]
+build-backend = "uv_build"
